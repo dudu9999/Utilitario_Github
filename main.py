@@ -1,4 +1,4 @@
-import time
+﻿import time
 import os
 import tqdm
 
@@ -32,7 +32,6 @@ while True:
         print('Adicionando a mensagem de commit (Commit)...')
         break
 os.system("git commit -m "+mensagem)
-print("git commit -m "+mensagem)
 
 time.sleep(2)
 progressbar.update(20)
@@ -54,6 +53,6 @@ time.sleep(2)
 progressbar.update(20)
 
 print("\n________ Projeto enviado!________")
-
+progressbar.close()
 time.sleep(5)
 
